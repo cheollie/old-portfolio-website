@@ -75,7 +75,7 @@ code{
   display: table; 
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: background 0.15s ease-out;
-  background: linear-gradient(90deg, #fde6a4 0%, #fde6a4 100%);
+  background: linear-gradient(270deg, white 0%, #fde6a4 100%);
 }
 
 /*#navbar:hover{
