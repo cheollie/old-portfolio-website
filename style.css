@@ -68,7 +68,6 @@ img{
   top: 0px;
   height: 100px;
   width: 100%;
-  /*border-bottom: dotted #000000 1px;*/
   display: table; 
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: background 0.15s ease-out;
@@ -112,19 +111,41 @@ img{
   background-position: 50% 95%;
   padding: 5px;
 }
+
 @media screen and (max-width: 800px){
-  #navbar{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 100px;
-    width: 100% ;
-    float:none;
-    /*border-bottom: dotted #000000 1px;*/
-    display: table; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: background 0.15s ease-out;
-    background: linear-gradient(270deg, white 0%, #fde6a4 100%);  
+  #subnavbarright{
+    display: block;
+    text-align: center;
+    padding:0;
+    padding-bottom: 16px;
+  }
+  #subnavbarleft{
+    display: block;
+    text-align: center;
+    padding-top:16px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+  }
+  .navbar-subtitle-text{
+    font-weight: normal;
+    font-size: 20px;
+    margin: 6px;
+  }
+  .nav-underline{
+    background-image: linear-gradient(120deg, black 0%, black 100%);
+    background-repeat: no-repeat;
+    background-size: 95% 0;
+    background-position: 50% 95%;
+    transition: background-size 0.15s ease-out;
+    padding: 2.5px;
+  }
+  .selected{
+    background-image: linear-gradient(120deg, black 0%, black 100%);
+    background-repeat: no-repeat;
+    background-size: 95% 4%;
+    background-position: 50% 95%;
+    padding: 2.5px;
   }
 }
 
