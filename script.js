@@ -1,3 +1,3 @@
-(window.innerWidth < 200) {
+(window.innerWidth < 400) {
     alert("why ur screen so small ??? ? ? ? ?")
 }
