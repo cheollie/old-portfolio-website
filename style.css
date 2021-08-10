@@ -4,7 +4,7 @@ how to css
 reee
 */
 
-/* ------ default ---- */
+/* DEFAULT ---------------------- */
 a{
   text-decoration: none;
 }
@@ -29,24 +29,22 @@ code{
 .semibold{
   font-weight: 420;
 }
-.hover{
-  background-image: linear-gradient(120deg, #fde5a4a6 0%, #fde5a4a6 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 10%;
-  background-position: 50% 95%;
-}
 .short-br{
   content: "";
   margin: -0.5em;
   display: block;
 }
-/* ----------------------------- CUSTOM SCROLLBAR ------------------------------------- */
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+/* CUSTOM SCROLLBAR ------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 15px;
@@ -58,13 +56,12 @@ code{
   background: darkgrey; 
   border-radius: 15px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: grey; 
 }
-/* --------------------------------------- NAVBAR ---------------------------------------------- */
 
+/* NAVBAR ---------------------------------------------- */
 #navbar{
   position: absolute;
   left: 0px;
@@ -77,32 +74,26 @@ code{
   transition: background 0.15s ease-out;
   background: linear-gradient(270deg, white 0%, #fde6a4 100%);
 }
-
 /*#navbar:hover{
-  background: linear-gradient(270deg, white 0%, #fde6a4 100%);  
+  background: linear-gradient(270deg, #fde6a4 0%, #fde6a4 100%);  
 }*/
-
 #subnavbarright{
   display: table-cell; vertical-align: middle;  text-align:right;
   padding-right: 30px;
 }
-
 #subnavbarleft{
   display: table-cell; vertical-align: middle;
   padding-left: 30px;
 }
-
 .navbar-title-text{
   font-weight: 850;
   font-size: 30px;
 }
-
 .navbar-subtitle-text{
   font-weight: normal;
   font-size: 20px;
   margin: 10px;
 }
-
 .nav-underline{
   background-image: linear-gradient(120deg, black 0%, black 100%);
   background-repeat: no-repeat;
@@ -111,11 +102,9 @@ code{
   transition: background-size 0.15s ease-out;
   padding: 5px;
 }
-
 .nav-underline:hover{
   background-size: 90% 4%;
 }
-
 .selected{
   background-image: linear-gradient(120deg, black 0%, black 100%);
   background-repeat: no-repeat;
@@ -123,7 +112,6 @@ code{
   background-position: 50% 95%;
   padding: 5px;
 }
-
 @media screen and (max-width: 800px){
   #navbar{
     position: absolute;
@@ -139,7 +127,8 @@ code{
     background: linear-gradient(270deg, white 0%, #fde6a4 100%);  
   }
 }
-/* ---------------------- PRESET FORMATTING ----------------------- */
+
+/* PRESET FORMATTING ----------------------- */
 .main{
   position: absolute;
   top: 100px;
@@ -148,188 +137,9 @@ code{
   height: calc(100%-100px);
   height: -moz-calc(100% - 100px);
   height: -webkit-calc(100% - 100px);
-  justify-content: center;
-}
-
-/* HOME PAGE ------------------------------------ */
-
-#home{
-  /*background-image: url("https://media.discordapp.net/attachments/759867023885860934/871786916406788136/unknown.png");*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000px auto;
-}
-
-.home-content{
-  position: absolute;
-  display: table;
-  text-align: center;
-  padding-right: 350px;
-  padding-left: 350px;
-  margin: 0 auto;
-  height: 100%;
-}
-.home-content-vc{
-  display: table-cell; 
-  vertical-align: middle; 
-  padding: 50px 0;
-}
-.home-title{
-  font-size: 29px;
-  margin: 10px 0;
-  background-color: #fde6a4;
-  padding: 5px;
-  border-radius: 5px;
-  border: solid black 1px;
-}
-.home-body{
-  font-size: 19px;
-  margin: 10px 0;
-}
-
-.home-underline{
-  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 40%;
-  background-position: 50% 95%;
-  transition: background-size 0.15s ease-out;
-}
-
-@media screen and (max-width: 800px){
-  .home-content{
-    position: absolute;
-    display: table;
-    text-align: center;
-    padding-right: 200px;
-    padding-left: 200px;
-    margin: 0 auto;
-    height: 100%;
-    /*background: blueviolet; */
-  }
-}
-
-
-/* ABOUT PAGE ------------------------------------ */
-
-#about{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000px auto;
   justify-content: left;
 }
-
-.about-content{
-  position: absolute;
-  display: table;
-  padding-right: 100px;
-  padding-left: 100px;
-  margin: 0 auto;
-  height: 100%;
-}
-.about-content-vc{
-  display: table-cell; 
-  vertical-align: middle; 
-}
-.about-title{
-  font-size: 29px;
-  margin-bottom: 10px;
-}
-.about-body{
-  font-size: 19px;
-  margin-top: 10px;
-}
-
-.about-img{
-  display: inline;
-  padding: 20px;
-}
-
-@media screen and (max-width: 800px){
-  .about-content{
-    position: absolute;
-    display: table;
-    padding-right: 80px;
-    padding-left: 80px;
-    margin: 0 auto;
-    height: 100%;
-    /*background: blueviolet; */
-  }
-}
-
-
-/* CONTACT PAGE ------------------------------------ */
-
-#contact{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000px auto;
-  justify-content: left;
-}
-
-.contact-content{
-  position: absolute;
-  display: table;
-  padding-right: 100px;
-  padding-left: 100px;
-  margin: 0 0;
-  height: 100%;
-}
-.contact-content-vc{
-  display: table-cell; 
-  vertical-align: middle; 
-}
-.contact-title{
-  font-size: 29px;
-  margin: 10px 0;
-}
-
-
-.contact-body{
-  font-size: 19px;
-  margin: 10px 0;
-  line-height: 150%;
-}
-
-.contact-links{
-  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 6%;
-  background-position: 50% 95%;
-  transition: background-size 0.15s ease-out;
-  padding: 2px;
-}
-.contact-links:hover{
-  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 45%;
-  background-position: 50% 95%;
-  padding: 2px;
-}
-
-
-@media screen and (max-width: 800px){
-  .contact-content{
-    position: absolute;
-    display: table;
-    padding-right: 80px;
-    padding-left: 80px;
-    margin: 0 auto;
-    height: 100%;
-    /*background: blueviolet; */
-  }
-}
-
-
-/* RANDOM PAGE ------------------------------------ */
-
-#random{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000px auto;
-  justify-content: left;
-}
-
-.random-content{
+.content{
   position: absolute;
   display: table;
   padding-right: 100px;
@@ -340,46 +150,120 @@ code{
   width: -moz-calc(100% - 200px);
   width: -webkit-calc(100% - 200px);
 }
-
-.random-content-vc{
+.content-vc{
   display: table-cell; 
   vertical-align: middle; 
   padding: 30px 0;
 }
-.random-title{
+.title{
   font-size: 29px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
+.body{
+  font-size: 19px;
+  margin: 10px 0;
+}
+@media screen and (max-width: 800px){
+  .content{
+    position: absolute;
+    display: table;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: 0 auto;
+    height: 100%;
+    width: calc(100%-90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+}
+
+/* HIGHLIGHTS AND UNDERLINES ----------------------- */
+.links{
+  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 6%;
+  background-position: 50% 95%;
+  transition: background-size 0.15s ease-out;
+  padding: 2px;
+}
+.links:hover{
+  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  background-position: 50% 95%;
+  padding: 2px;
+}
+.highlight{
+  background-image: linear-gradient(120deg, #fde6a4 0%, #fde6a4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 50% 95%;
+  transition: background-size 0.15s ease-out;
+}
+.underline{
+  background-image: linear-gradient(120deg, #fde5a4a6 0%, #fde5a4a6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
+  background-position: 50% 95%;
+}
+
+/* HOME PAGE ------------------------------------ */
+.home-content.content{
+  position: absolute;
+  display: table;
+  padding-right: 200px;
+  padding-left: 200px;
+  margin: 0 auto;
+  height: 100%;
+  width: calc(100%-400px);
+  width: -moz-calc(100% - 400px);
+  width: -webkit-calc(100% - 400px);
+  text-align: center;
+}
+.home-content-vc{
+  padding: 50px 0;
+}
+.home-title{
+  font-size: 29px;
+  margin: 10px 0;
+  background-color: #fde6a4;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+@media screen and (max-width: 800px){
+  .home-content.content{
+    position: absolute;
+    display: table;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin: 0 auto;
+    height: 100%;
+    width: calc(100%-140px);
+    width: -moz-calc(100% - 140px);
+    width: -webkit-calc(100% - 140px);
+  }
+}
+
+/* CONTACT PAGE ------------------------------------ */
+.contact-body{
+  line-height: 150%;
+}
+
+/* RANDOM PAGE ------------------------------------ */
 .random-body{
   font-size: 19px;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   overflow: auto;
-  max-height: 400px;
+  height: calc(100%-130px);
+  height: -moz-calc(100% - 130px);
+  height: -webkit-calc(100% - 130px);
   min-width: 100%;
 }
-
 ul .random-body{
   margin-top: 0;
 }
 p .random-body{
   margin-bottom:0;
 }
-
-.random-img{
-  display: inline;
-  padding: 20px;
-}
-
-@media screen and (max-width: 800px){
-  .random-content{
-    position: absolute;
-    display: table;
-    padding-right: 80px;
-    padding-left: 80px;
-    margin: 0 auto;
-    height: 100%;
-    /*background: blueviolet; */
-  }
-}
-
