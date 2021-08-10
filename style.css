@@ -29,6 +29,9 @@ code{
 .semibold{
   font-weight: 420;
 }
+.heavybold{
+  font-weight: 850;
+}
 .short-br{
   content: "";
   margin: -0.5em;
@@ -85,11 +88,9 @@ img{
   padding-left: 30px;
 }
 .navbar-title-text{
-  font-weight: 850;
   font-size: 30px;
 }
 .navbar-subtitle-text{
-  font-weight: normal;
   font-size: 20px;
   margin: 10px;
 }
@@ -128,10 +129,9 @@ img{
     padding-bottom: 8px;
   }
   .navbar-subtitle-text{
-    font-weight: normal;
     font-size: 20px;
     margin: 6px;
-  }
+  }  
   .nav-underline{
     background-image: linear-gradient(120deg, black 0%, black 100%);
     background-repeat: no-repeat;
@@ -139,6 +139,9 @@ img{
     background-position: 50% 95%;
     transition: background-size 0.15s ease-out;
     padding: 2.5px;
+  }
+  .nav-underline:hover{
+    background-size: 95% 4%;
   }
   .selected{
     background-image: linear-gradient(120deg, black 0%, black 100%);
