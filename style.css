@@ -5,6 +5,10 @@ reee
 */
 
 /* DEFAULT ---------------------- */
+::selection{
+  background-color: #fde6a46b;
+}
+
 a{
   text-decoration: none;
 }
