@@ -229,9 +229,9 @@ img{
   transition: background-size 0.15s ease-out;
 }
 .underline{
-  background-image: linear-gradient(120deg, #fde5a4a6 0%, #fde5a4a6 100%);
+  background-image: linear-gradient(120deg, black 0%, black 100%);
   background-repeat: no-repeat;
-  background-size: 100% 10%;
+  background-size: 100% 5%;
   background-position: 50% 95%;
 }
 
