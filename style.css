@@ -5,10 +5,12 @@ reee
 */
 
 /* DEFAULT ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@850&display=swap');
+
 ::selection{
   background-color: #fde6a46b;
 }
-
 a{
   text-decoration: none;
 }
@@ -31,7 +33,7 @@ code{
   padding:.1em .2em;
 }
 .semibold{
-  font-weight: 420;
+  font-weight: 500;
 }
 .heavybold{
   font-weight: 850;
@@ -233,6 +235,9 @@ img{
   background-repeat: no-repeat;
   background-size: 100% 5%;
   background-position: 50% 95%;
+}
+.hover-underline{
+  color: #837756;
 }
 
 /* HOME PAGE ------------------------------------ */
