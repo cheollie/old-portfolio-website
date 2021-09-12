@@ -24,6 +24,7 @@ body{
   height: 100%;
   margin: 0;
   width: 100%;
+  overflow: hidden;
 }
 code{
   font-size:.9em;
@@ -266,6 +267,13 @@ img{
   border: solid black 1px;
   font-weight: 600;
 }
+.home-bg{
+  -webkit-background-clip: text;
+  display: flex;
+  background: #fde6a4;
+  background: 
+    radial-gradient( white, fde6a4);
+}
 @media screen and (max-width: 800px){
   .home-content.content{
     position: absolute;
@@ -301,4 +309,16 @@ ul .random-body{
 }
 p .random-body{
   margin-bottom:0;
+}
+/*kek*/
+@keyframes kekanimation{
+  from{left:-10%;bottom:0;}
+  to{left:100%;bottom:0;}
+}
+#kek{
+  position:absolute;
+  animation: kekanimation 8s linear;
+  display:none;
+  left: -100%;
+  bottom:0;
 }
