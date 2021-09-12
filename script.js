@@ -8,18 +8,6 @@ if (window.innerWidth < 400) {
 
 
 
-$(document).mousemove(function(event) {
-  windowWidth = $(window).width();
-  windowHeight = $(window).height();
-  
-  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-  
-  $('.home-bg').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, white, #fde6a4)');
-});
-
-
-
 
 
 
@@ -288,4 +276,4 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
         }
 }
 
-var easter_egg = new Konami(function() {document.getElementById("kek").style.display = "block"; var audio = new Audio('hmm.mp3'); audio.play();});
+var easter_egg = new Konami(function() {document.getElementById("kek").style.display = "block"; var audio = new Audio('hmm.mp3'); audio.play();setTimeout(function(){document.getElementById("kek").style.display="none";}, 8000); });
