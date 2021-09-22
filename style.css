@@ -267,11 +267,11 @@ img{
   border: solid black 1px;
   font-weight: 600;
   transition: ease 0.25s;
-}
+} /*
 .home-title:hover{
   box-shadow: 3px 3px #fff0c8;
   transform: translate(-3px, -3px);
-}
+}*/
 .home-bg{
   -webkit-background-clip: text;
   display: flex;
