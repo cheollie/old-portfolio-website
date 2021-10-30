@@ -315,6 +315,14 @@ ul .random-body{
 p .random-body{
   margin-bottom:0;
 }
+
+/*404*/
+.hot-choc{
+  height:100px;
+  opacity: 90%;
+}
+
+
 /*kek*/
 @keyframes kekanimation{
   from{left:-10%;bottom:0;}
